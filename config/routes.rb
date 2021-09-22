@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'homes/top'
+  root to: 'homes#top'
   resources :categories, except: [:new, :show]
   resources :titles
   resources :quizzes, except: [:index]
